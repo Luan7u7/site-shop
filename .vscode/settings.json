@@ -1,0 +1,13 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "react-native-tools.networkInspector.consoleLogsColorTheme": "Dark",
+    "material-icon-theme.activeIconPack": "react",
+    "material-icon-theme.folders.color": "#90a4ae",
+    "editor.minimap.scale": 2,
+    "editor.minimap.maxColumn": 80,
+    "editor.minimap.autohide": true,
+    "diffEditor.wordWrap": "on",
+    "editor.wordWrap": "on",
+    "workbench.editor.wrapTabs": true,
+    "prettier.proseWrap": "preserve"
+}
