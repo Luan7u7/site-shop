@@ -10,7 +10,7 @@ menu.addEventListener('click', () => {
 
 favorite.addEventListener('click', () => {
     console.log('clicou')
-    window.location('../login')
+    window.location = './login.html'
 })
 
 person.addEventListener('click', () => {
