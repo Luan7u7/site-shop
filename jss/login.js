@@ -16,11 +16,13 @@ const init = () => {
         
         if(email.value.length <= 9 || senha.value.length <= 6){
 
-            // modalContainer.style.display = 'block';
-
-            // console.log(`o botão ${clik} foi precionado`);
+            modalContainer.style.display = 'block';
+            
+            return;
         }
-        
+        localStorage.setItem('email', email.value);
+        localStorage.setItem('password', senha.value);
+        window.location = './index.html'
     })
 
     email.addEventListener('input', event => {
