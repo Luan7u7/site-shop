@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* outline: 1px double orangered; */
+    outline: 1px double orangered;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     text-decoration: none;
@@ -10,6 +10,7 @@
 }
 *::-webkit-scrollbar {
     width: 7px;
+    height: 5px;
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
@@ -70,18 +71,43 @@ main{
 }
 
 section{
-    background-color: #0078;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    background-color: rgba(0, 0, 255, 0.342);
     width: 90%;
-    height: 100px;
+    scroll-snap-type: x mandatory;
+    height: 140px;
     margin: 0px auto ;
     padding: 2%;
+}
+
+.plus{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: -5px;
+    left: -5px;
+}
+
+section > div{
+    background-image: url(../imagens/1-1.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 120px;     
+    flex: 0 0 60%;
+    padding: 24px;
+    scroll-snap-align: start;
+    border-radius: 8px;
 }
 
 footer{
     width: 100%;
     position: fixed;
     bottom: 0;
-    height: 45px;
+    height: 50px;
     display: flex;
     gap: 10%;
     justify-content: space-evenly;
@@ -93,8 +119,11 @@ footer{
 }
 
 footer > button{
+    display: flex;
+    align-items: center;
     background: none;
     border: none;
+    margin-bottom: 3px;
 }
 
 footer > button > img{
