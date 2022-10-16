@@ -9,8 +9,8 @@ menu.addEventListener('click', () => {
 })
 
 favorite.addEventListener('click', () => {
-
-    console.log('clicou');
+    console.log('clicou')
+    window.location('../login')
 })
 
 person.addEventListener('click', () => {
