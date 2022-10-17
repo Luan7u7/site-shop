@@ -139,7 +139,7 @@ section{
     position: relative;
     display: flex;
     gap: 10px;
-    background-color: rgba(0, 0, 255, 0.137);
+    /* background-color: rgba(0, 0, 255, 0.137); */
     width: 90%;
     overflow-x: scroll;
     overflow-y: hidden;
