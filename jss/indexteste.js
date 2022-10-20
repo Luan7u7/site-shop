@@ -21,7 +21,7 @@ const createContainerBranco = () => {
     const section = createElement('div', 'section');
     
     const div = createElement('div', 'f1');
-    div.style.backgroundImage = `url('../imagens/branco/1-1.webp')`
+    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01675551.jpg')`
     
     const div2 = createElement('div', 'f1');
     div2.style.backgroundImage = `url('../imagens/branco/1-2.webp')`
