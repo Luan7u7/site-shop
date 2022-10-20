@@ -21,23 +21,23 @@ const createContainerBranco = () => {
     const section = createElement('div', 'section');
     
     const div = createElement('div', 'f1');
-    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01675551.jpg')`
+    div.style.backgroundImage = `url(https://imgnike-a.akamaihd.net/1300x1300/01675551A4.jpg)`
     
     const div2 = createElement('div', 'f1');
-    div2.style.backgroundImage = `url('../imagens/branco/1-2.webp')`
+    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01675551A2.jpg')`
 
     const div3 = createElement('div', 'f1');
-    div3.style.backgroundImage = `url('../imagens/branco/1-3.webp')`
+    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01675551.jpg')`
 
     const div4 = createElement('div', 'f1');
-    div4.style.backgroundImage = `url('../imagens/branco/1-4.webp')`
+    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01675551A3.jpg')`
     div4.style.backgroundSize = 'contain'
 
     const div5 = createElement('div', 'f1');
-    div5.style.backgroundImage = `url('../imagens/branco/1-5.webp')`
+    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01675551A6.jpg')`
 
     const div6 = createElement('div', 'f1');
-    div6.style.backgroundImage = `url('../imagens/branco/1-6.webp')`
+    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01675551A7.jpg')`
 
     main.appendChild(container)
     container.appendChild(section);
@@ -55,23 +55,24 @@ const createContainerLaranja = () => {
     const container = createElement('div', 'container')
     const section = createElement('div', 'section');
     const div = createElement('div', 'f1');
-    div.style.backgroundImage = `url('../imagens/laranja/2-1.webp')`
+    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755A4.jpg')`
     
     const div2 = createElement('div', 'f1');
-    div2.style.backgroundImage = `url('../imagens/laranja/2-2.webp')`
+    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755A2.jpg')`
 
     const div3 = createElement('div', 'f1');
-    div3.style.backgroundImage = `url('../imagens/laranja/2-3.webp')`
+    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755.jpg')`
 
     const div4 = createElement('div', 'f1');
-    div4.style.backgroundImage = `url('../imagens/laranja/2-4.webp')`
+    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755A3.jpg')`
     div4.style.backgroundSize = 'contain'
 
     const div5 = createElement('div', 'f1');
-    div5.style.backgroundImage = `url('../imagens/laranja/2-5.webp')`
+    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755A6.jpg')`
 
     const div6 = createElement('div', 'f1');
-    div6.style.backgroundImage = `url('../imagens/laranja/2-6.webp')`
+    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755A7.jpg')`
+
 
     main.appendChild(container)
     container.appendChild(section);
@@ -85,27 +86,27 @@ const createContainerLaranja = () => {
     return container;
 }
 
-const createContainerBlack = () => {
+const createContainerMidSE = () => {
     const container = createElement('div', 'container')
     const section = createElement('div', 'section');
     const div = createElement('div', 'f1');
-    div.style.backgroundImage = `url('../imagens/preto/3-1.webp')`
+    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1A4.jpg')`
     
     const div2 = createElement('div', 'f1');
-    div2.style.backgroundImage = `url('../imagens/preto/3-2.webp')`
+    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1A2.jpg')`
 
     const div3 = createElement('div', 'f1');
-    div3.style.backgroundImage = `url('../imagens/preto/3-3.webp')`
+    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1.jpg')`
 
     const div4 = createElement('div', 'f1');
-    div4.style.backgroundImage = `url('../imagens/preto/3-4.webp')`
+    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1A3.jpg')`
     div4.style.backgroundSize = 'contain'
 
     const div5 = createElement('div', 'f1');
-    div5.style.backgroundImage = `url('../imagens/preto/3-5.webp')`
+    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1A6.jpg')`
 
     const div6 = createElement('div', 'f1');
-    div6.style.backgroundImage = `url('../imagens/preto/3-6.webp')`
+    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1A7.jpg')`
 
     main.appendChild(container)
     container.appendChild(section);
@@ -119,28 +120,28 @@ const createContainerBlack = () => {
     return container;
 }
 
-const createContainerRosa = () => {
+const createContainerXUX = () => {
     const container = createElement('div', 'container')
     const section = createElement('div', 'section');
 
     const div = createElement('div', 'f1');
-    div.style.backgroundImage = `url('../imagens/rosa/4-1.webp')`
+    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147UA4.jpg')`
     
     const div2 = createElement('div', 'f1');
-    div2.style.backgroundImage = `url('../imagens/rosa/4-2.webp')`
+    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147UA2.jpg')`
 
     const div3 = createElement('div', 'f1');
-    div3.style.backgroundImage = `url('../imagens/rosa/4-3.webp')`
+    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147U.jpg')`
 
     const div4 = createElement('div', 'f1');
-    div4.style.backgroundImage = `url('../imagens/rosa/4-4.webp')`
+    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147UA3.jpg')`
     div4.style.backgroundSize = 'contain'
 
     const div5 = createElement('div', 'f1');
-    div5.style.backgroundImage = `url('../imagens/rosa/4-5.webp')`
+    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147UA6.jpg')`
 
     const div6 = createElement('div', 'f1');
-    div6.style.backgroundImage = `url('../imagens/rosa/4-6.webp')`
+    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147UA7.jpg')`
 
     main.appendChild(container)
     container.appendChild(section);
@@ -156,8 +157,8 @@ const createContainerRosa = () => {
 
 createContainerBranco()
 createContainerLaranja()
-createContainerBlack()
-createContainerRosa()
+createContainerMidSE()
+createContainerXUX()
 
 menu.addEventListener('click', () => {
 
