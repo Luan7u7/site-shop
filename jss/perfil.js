@@ -12,9 +12,9 @@ menu.addEventListener('click', () => {
     if(moreoptions.style.visibility == 'hidden'){
         moreoptions.style.transform = 'translate(0px, 0px)'
         moreoptions.style.transition = 'all .4s'
+        moreoptions.style.visibility = 'visible'
         main.style.transform = 'translate(0px, 85px)'
         main.style.transition = 'all .5s'
-        moreoptions.style.visibility = 'visible'
     }
     else {
         moreoptions.style.transform = 'translate(-340px, 0px)'
