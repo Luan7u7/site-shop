@@ -5,6 +5,7 @@ const moreoptions = document.querySelector('.moreoptions')
 const closemenu = document.querySelector('.closemenu')
 const main = document.querySelector('main')
 const search = document.querySelector('.search')
+const buy = document.querySelector('.buy')
 
 const modelos = ['','','', '',]
 
@@ -155,25 +156,95 @@ const createContainerXUX = () => {
     return container;
 }
 
-createContainerBranco()
-createContainerLaranja()
-createContainerMidSE()
-createContainerXUX()
+const createContainerZion2 = () => {
+    const container = createElement('div', 'container')
+    const section = createElement('div', 'section');
+
+    const div = createElement('div', 'f1');
+    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051A4.jpg')`
+    
+    const div2 = createElement('div', 'f1');
+    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051A2.jpg')`
+
+    const div3 = createElement('div', 'f1');
+    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051.jpg')`
+
+    const div4 = createElement('div', 'f1');
+    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051A3.jpg')`
+    div4.style.backgroundSize = 'contain'
+
+    const div5 = createElement('div', 'f1');
+    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051A6.jpg')`
+
+    const div6 = createElement('div', 'f1');
+    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051A7.jpg')`
+
+    main.appendChild(container)
+    container.appendChild(section);
+    section.appendChild(div);
+    section.appendChild(div2);
+    section.appendChild(div3);
+    section.appendChild(div4);
+    section.appendChild(div5);
+    section.appendChild(div6);
+
+    return container;
+}
+
+const createContainerXXXVILow = () => {
+    const container = createElement('div', 'container')
+    const section = createElement('div', 'section');
+
+    const div = createElement('div', 'f1');
+    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/013631IDA4.jpg')`
+    
+    const div2 = createElement('div', 'f1');
+    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/013631IDA2.jpg')`
+
+    const div3 = createElement('div', 'f1');
+    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/013631ID.jpg')`
+
+    const div4 = createElement('div', 'f1');
+    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/013631IDA3.jpg')`
+    div4.style.backgroundSize = 'contain'
+
+    const div5 = createElement('div', 'f1');
+    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/013631IDA6.jpg')`
+
+    const div6 = createElement('div', 'f1');
+    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/013631IDA7.jpg')`
+
+    main.appendChild(container)
+    container.appendChild(section);
+    section.appendChild(div);
+    section.appendChild(div2);
+    section.appendChild(div3);
+    section.appendChild(div4);
+    section.appendChild(div5);
+    section.appendChild(div6);
+
+    return container;
+}
+
+createContainerBranco();
+createContainerLaranja();
+createContainerMidSE();
+createContainerXUX();
+createContainerZion2();
+createContainerXXXVILow();
 
 menu.addEventListener('click', () => {
 
     if(moreoptions.style.visibility == 'hidden'){
-        moreoptions.style.visibility = 'visible'
         moreoptions.style.transform = 'translate(0px, 0px)'
-        moreoptions.style.opacity = '1'
         moreoptions.style.transition = 'all .4s'
-        main.style.transform = 'translate(-20px, 75px)'
+        main.style.transform = 'translate(0px, 85px)'
         main.style.transition = 'all .5s'
+        moreoptions.style.visibility = 'visible'
     }
     else {
+        moreoptions.style.transform = 'translate(-340px, 0px)'
         moreoptions.style.visibility = 'hidden'
-        moreoptions.style.transform = 'translate(-300px, 0px)'
-        moreoptions.style.opacity = '0'
     }
 })
 
@@ -189,9 +260,23 @@ closemenu.addEventListener('click', () => {
 })
 
 search.addEventListener('click', () => {
-    
+
 })
 
+favorite.addEventListener('click', () => {
+
+    window.location = './favorite.html'
+})
+
+person.addEventListener('click', () => {
+
+    window.location = './perfil.html'
+})
+
+buy.addEventListener('click', () => {
+
+    window.location = './buy.html'
+})
 
 
 

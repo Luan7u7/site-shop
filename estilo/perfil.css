@@ -1,13 +1,10 @@
 *{
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
-    /* outline: 1px double orangered; */
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    text-decoration: none;
-    color: black;
-    user-select: none;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px double crimson;
+    background: none;
+    border: none;
 }
 *::-webkit-scrollbar {
     width: 5px;
@@ -48,8 +45,21 @@ header{
     z-index: 10;
 }
 
-header button{
+header h2{
+    color: crimson;
+    font-size: 1.5em;
+    margin-left: 12%;
+}
+
+.favorite-person{
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 0, 0, 0.511);
+    width: 20%;
+}
+
+header button{
     justify-content: center;
     align-items: center;
     background: none;
@@ -117,65 +127,38 @@ ul{
     cursor: pointer;
 }
 
-header h2{
-    color: crimson;
-    font-size: 1.5em;
-    margin-left: 20px;
-}
-
-header > div {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    gap: 20px;
-    height: 26px;
-}
-
 main{
+    background-color: #04ff04;
+    padding: 1%;
+}
+
+section{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    /* background-color: crimson; */
-    width: 100%;
-    height: 100%;
-    padding: 0px 1px 12% 1px;
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    /* background-color: #1589f5fd; */
+    justify-content: flex-start;
+    padding: 1%;
+    gap: 8%;
     width: 100%;
-    margin-top: 10px;
+    height: 130px;
+    margin-top: 20px;
+    background-color: #c9c9c9;
 }
 
-.section{
-    position: relative;
+section > h3 {
+    margin-left: -65%;
+}
+
+.buttonsimgContainer{
     display: flex;
-    gap: 10px;
-    /* background-color: rgba(79, 88, 209, 0.993); */
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
     width: 90%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    height: 230px;
-    margin: 0px auto ;
-    padding: 2%;
 }
 
-
-.section > div{
-    background-color: rgb(247, 247, 247);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100%;     
-    flex: 0 0 55%;
-    padding: 24px;
-    scroll-snap-align: start;
-    border-radius: 8px;
+section > button > img {
+    width: 40px;
 }
 
 footer{
@@ -195,18 +178,10 @@ footer{
     backdrop-filter: blur(3px);
 }
 
-.search.on{
-    background-color: pink;
-}
-
 footer > button{
     display: flex;
     align-items: center;
     background: none;
     border: none;
     margin-bottom: 3px;
-}
-
-footer > button > img{
-    filter: invert(30%);
 }
