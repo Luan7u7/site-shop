@@ -32,3 +32,22 @@ closemenu.addEventListener('click', () => {
         telamenu.style.visibility = 'hidden'
     }
 })
+
+search.addEventListener('click', () => {
+
+})
+
+favorite.addEventListener('click', () => {
+
+    window.location = './favorite.html'
+})
+
+person.addEventListener('click', () => {
+
+    window.location = './perfil.html'
+})
+
+buy.addEventListener('click', () => {
+
+    window.location = './buy.html'
+})
