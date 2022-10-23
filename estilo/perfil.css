@@ -5,6 +5,8 @@
     /* outline: 1px double crimson; */
     background: none;
     border: none;
+    user-select: none;
+    -moz-user-select: toggle;
 }
 *::-webkit-scrollbar {
     width: 5px;
@@ -15,7 +17,7 @@
   }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgba(128, 128, 128, 0.818);
+    background-c'olor: rgba(128, 128, 128, 0.818);
     border-radius: 20px;
 }
 
