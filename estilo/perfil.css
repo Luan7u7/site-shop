@@ -8,16 +8,27 @@
     user-select: none;
     -moz-user-select: toggle;
 }
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48;
+
+}
+
 *::-webkit-scrollbar {
     width: 5px;
     height: 5px;
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
-  }
+}
 
 *::-webkit-scrollbar-thumb {
-    background-c'olor: rgba(128, 128, 128, 0.818);
+    background-color: rgba(128, 128, 128, 0.818);
     border-radius: 20px;
 }
 
@@ -77,12 +88,12 @@ header button{
     position: fixed;
     margin: 0;
     top: 5px;
-    left: 0;
+    left: -1px;
     display: grid;
     grid-template-columns: repeat(2, 28%);
     gap: 10px 20%;
     background-color: rgb(201, 224, 224);
-    border: 2px solid white;
+    border: 1px solid white;
     box-shadow: -1px 3px 2px rgba(0, 0, 0, 0.356);
     width: 78%;
     max-width: 85%;
@@ -116,10 +127,11 @@ ul{
 .closemenu{
     position: absolute;
     bottom: 4px;
-    right: 4px;
+    right: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     border: 1px solid white;
     border-radius: 50%;
     background-color: #e6e6e6e8;
