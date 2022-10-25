@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -9,17 +11,19 @@
     color: black;
     user-select: none;
 }
+
 *::-webkit-scrollbar {
     width: 5px;
     height: 5px;
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
-  }
+}
 
 *::-webkit-scrollbar-thumb {
     background-color: rgba(128, 128, 128, 0.818);
     border-radius: 20px;
+    visibility: hidden;
 }
 
 *::-webkit-scrollbar-track {
@@ -27,6 +31,14 @@
     visibility: hidden;
     background-color: rgba(233, 16, 16, 0);
     opacity: 0;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
 }
 
 body{
@@ -46,6 +58,14 @@ header{
     background-color: white;
     height: 50px;
     z-index: 10;
+}
+
+header h2{
+    font-family: 'Poiret One', cursive;
+    font-weight: 800;
+    /* color: crimson; */
+    font-size: 1.5em;
+    margin-left: 28px;
 }
 
 header button{
@@ -69,16 +89,16 @@ header button{
     display: grid;
     grid-template-columns: repeat(2, 80px);
     gap: 10px 20%;
-    background-color: rgb(201, 224, 224);
-    border: 2px solid white;
+    background-color: rgb(229, 230, 230);
+    border: 1px solid white;
     box-shadow: -1px 3px 2px rgba(0, 0, 0, 0.356);
     width: 78%;
     max-width: 85%;
     height: 150px;
     z-index: 3;
     flex: 0 0 50%;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius: 14px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     padding: 64px 10px;
     visibility: hidden;
     opacity: 1;
@@ -86,12 +106,12 @@ header button{
     cursor: pointer;
 }
 
-ul{
+header ul{
     display: flex;
     justify-content: left;
     align-items: center;
     align-content: center;
-    background-color: rgb(183, 209, 219);
+    background-color: rgb(224, 228, 229);
     border: 1px solid white;
     border-radius: 5px;
     padding: 2px 5px;
@@ -111,17 +131,13 @@ ul{
     border: 1px solid white;
     border-radius: 50%;
     background-color: #e6e6e6e8;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.514);
     cursor: pointer;
 }
 
-header h2{
-    color: crimson;
-    font-size: 1.5em;
-    margin-left: 20px;
-}
+
 
 header > div {
     display: flex;
@@ -131,10 +147,26 @@ header > div {
     height: 26px;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 0px 10px;
+    gap: 30px;
+    font-size: .7em;
+    background-color: white;
+    border-bottom: 1px solid rgb(197, 196, 196);
+}
+nav::-webkit-scrollbar-thumb{
+    color:none; 
+    background-color: none;
+    visibility: hidden;
+}
+
+
 main{
     display: flex;
     flex-direction: column;
-    gap: 10px;
     /* background-color: crimson; */
     width: 100%;
     height: 100%;
@@ -154,14 +186,12 @@ main{
     position: relative;
     display: flex;
     gap: 10px;
-    /* background-color: rgba(79, 88, 209, 0.993); */
     width: 90%;
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    height: 230px;
+    height: 160px;
     margin: 0px auto ;
-    padding: 2%;
 }
 
 
@@ -170,10 +200,9 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100px;
-    height: 100%;     
-    flex: 0 0 55%;
-    padding: 24px;
+    height: 150px;
+    width: 100%;     
+    flex: 0 0 40%;
     scroll-snap-align: start;
     border-radius: 8px;
 }
@@ -190,13 +219,13 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     border-top: 1px solid rgb(196, 196, 196);
-    /* background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 252, 252, 0.6)); */
-    background-color: rgba(255, 255, 255, 0.863);
+    background: linear-gradient(rgba(255, 255, 255, 0.879), rgb(255, 252, 252));
     backdrop-filter: blur(3px);
+    z-index: 99;
 }
 
 .search.on{
-    background-color: pink;
+    background-color: purple;
 }
 
 footer > button{
@@ -209,4 +238,40 @@ footer > button{
 
 footer > button > img{
     filter: invert(30%);
+}
+
+
+.fav-page{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    bottom: 50px;
+    transform: translate(0px, 800px);
+    color: white;
+    right: 0;
+    /* background-color: rgba(128, 0, 128, 0.289); */
+    width: 100%;
+    height: 88%;
+    transition: all .5s cubic-bezier(1,-0.04,.54,1.16);
+    visibility: hidden;
+}
+
+.fav-page-content{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.fav-page-content h4{
+    font-family: 'Poiret One', cursive;
+    font-weight: 800;
+    margin: 20px;
+}
+
+.fav-page-content span{
+    font-size: .5em;
+    text-align: center;
 }

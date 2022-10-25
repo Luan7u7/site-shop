@@ -1,3 +1,5 @@
+
+
 const menu = document.querySelector('.menu')
 const favorite = document.querySelector('.favorite')
 const person = document.querySelector('.person')
@@ -249,7 +251,9 @@ menu.addEventListener('click', () => {
 })
 
 closemenu.addEventListener('click', () => {
+
     if(moreoptions.style.visibility == 'visible'){
+        
         moreoptions.style.visibility = 'hidden'
         moreoptions.style.transform = 'translate(-300px, 0px)'
         main.style.transform = 'translate(0px, 0px)'
@@ -261,13 +265,29 @@ closemenu.addEventListener('click', () => {
 
 search.addEventListener('click', () => {
 
+    window.location = 'login.html'
 })
+
+const favPage = document.querySelector('.fav-page')
 
 favorite.addEventListener('click', () => {
 
-    window.location = './favorite.html'
-})
+    console.log('foi')
 
+    if(favPage.style.visibility == 'hidden'){
+
+        favPage.style.visibility = 'visible'
+        favPage.style.transform = 'translate(0px, 0px)'
+    }
+    else {
+
+        favPage.style.transform = 'translate(0px, 800px)'
+        favPage.style.visibility = 'hidden'
+    }
+})
+    
+
+    
 person.addEventListener('click', () => {
 
     window.location = './perfil.html'
