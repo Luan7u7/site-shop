@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
+:root{
+    --font: 'Poiret One', cursive;
+    --span: position: absolute,
+    top: 5px,
+    left: 10px,
+    font-family: var(--font),
+    font-weight: bold,
+    font-size: .9em,
+    text-transform: uppercase,
+    text-shadow: -1px 1px 0px rgba(233, 7, 7, 0.601), 1px 1px 0px rgba(0, 0, 255, 0.349);
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -89,8 +101,8 @@ header button{
     display: grid;
     grid-template-columns: repeat(2, 80px);
     gap: 10px 20%;
-    background-color: rgb(229, 230, 230);
-    border: 1px solid white;
+    background-color: rgb(240, 239, 239);
+    border: 1px solid rgb(255, 255, 255);
     box-shadow: -1px 3px 2px rgba(0, 0, 0, 0.356);
     width: 78%;
     max-width: 85%;
@@ -106,12 +118,12 @@ header button{
     cursor: pointer;
 }
 
-header ul{
+.moreoptions ul{
     display: flex;
     justify-content: left;
     align-items: center;
     align-content: center;
-    background-color: rgb(224, 228, 229);
+    background-color: rgb(219, 229, 232);
     border: 1px solid white;
     border-radius: 5px;
     padding: 2px 5px;
@@ -136,8 +148,6 @@ header ul{
     box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.514);
     cursor: pointer;
 }
-
-
 
 header > div {
     display: flex;
@@ -192,10 +202,12 @@ main{
     scroll-snap-type: x mandatory;
     height: 160px;
     margin: 0px auto ;
+    border-radius: 10px;
 }
 
 
 .section > div{
+    position: relative;
     background-color: rgb(247, 247, 247);
     background-size: cover;
     background-position: center;
@@ -205,6 +217,18 @@ main{
     flex: 0 0 40%;
     scroll-snap-align: start;
     border-radius: 8px;
+}
+
+
+.section span{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: .9em;
+    text-transform: uppercase;
+    text-shadow: -1px 1px 0px rgba(226, 180, 228, 0.601), 1px 1px 0px rgba(176, 197, 233, 0.349);
 }
 
 footer{
@@ -275,3 +299,4 @@ footer > button > img{
     font-size: .5em;
     text-align: center;
 }
+

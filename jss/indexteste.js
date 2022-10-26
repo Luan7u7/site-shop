@@ -8,7 +8,7 @@ const closemenu = document.querySelector('.closemenu')
 const main = document.querySelector('main')
 const search = document.querySelector('.search')
 const buy = document.querySelector('.buy')
-
+const favPage =document.querySelector('.fav-page')
 const modelos = ['','','', '',]
 
 
@@ -23,33 +23,54 @@ const createContainerBranco = () => {
     const container = createElement('div', 'container')
     const section = createElement('div', 'section');
     
-    const div = createElement('div', 'f1');
-    div.style.backgroundImage = `url(https://imgnike-a.akamaihd.net/1300x1300/01675551A4.jpg)`
+    const div1 = createElement('div', 'white');
+    const white = createElement('span', 'white')
+    div1.style.backgroundImage = `url(https://imgnike-a.akamaihd.net/1300x1300/01675551A4.jpg)`
+    white.innerHTML = 'Air Jordan <br>White'
     
     const div2 = createElement('div', 'f1');
-    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01675551A2.jpg')`
-
+    const midse = createElement('span', 'midse')
+    midse.innerHTML = 'Mid-SE'
+    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1A4.jpg')`
+    
     const div3 = createElement('div', 'f1');
-    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01675551.jpg')`
+    const xux = createElement('span', 'xux')
+    xux.innerHTML = 'XUX'
+    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147UA4.jpg')`
+
 
     const div4 = createElement('div', 'f1');
-    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01675551A3.jpg')`
+    const zion2 = createElement('span', 'zion2')
+    zion2.innerHTML = 'Zion2'
+    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051A4.jpg')`
     div4.style.backgroundSize = 'contain'
-
+   
+    
     const div5 = createElement('div', 'f1');
-    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01675551A6.jpg')`
-
+    const orange = createElement('span', 'orange')
+    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755A4.jpg')`
+    orange.innerHTML = 'Orange'
+    
     const div6 = createElement('div', 'f1');
-    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01675551A7.jpg')`
+    const xxxvilow = createElement('span', 'xxxvilow')    
+    xxxvilow.innerHTML = 'XXXvilow'
+    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/013631IDA4.jpg')`
+    
 
     main.appendChild(container)
     container.appendChild(section);
-    section.appendChild(div);
+    section.appendChild(div1);
     section.appendChild(div2);
     section.appendChild(div3);
     section.appendChild(div4);
     section.appendChild(div5);
     section.appendChild(div6);
+    div1.appendChild(white);
+    div2.appendChild(midse);
+    div3.appendChild(xux);
+    div4.appendChild(zion2);
+    div5.appendChild(orange);
+    div6.appendChild(xxxvilow);
 
     return container;
 }
@@ -228,6 +249,33 @@ const createContainerXXXVILow = () => {
     return container;
 }
 
+const createContainerAnuncio = () => {
+
+    const container = createElement('div', 'container')
+    const section = createElement('div', 'section')
+    const div = createElement('div', 'imagem')
+    const text = createElement('span', 'texto')
+
+    text.innerHTML = 'Você com conforto e estilo'
+    text.style.top = '30%'
+    text.style.left = '15%'
+    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/0119897U.jpg')`
+    div.style.flex = '0 0 100%'
+    div.style.scale = '1.3'
+    div.style.backgroundSize = 'contain'
+    div.style.backgroundPosition = 'bottom right'
+
+
+
+    main.appendChild(container);
+    container.appendChild(section);
+    section.appendChild(div);
+    div.appendChild(text)
+
+    return container;
+}
+
+createContainerAnuncio();
 createContainerBranco();
 createContainerLaranja();
 createContainerMidSE();
@@ -253,7 +301,7 @@ menu.addEventListener('click', () => {
 closemenu.addEventListener('click', () => {
 
     if(moreoptions.style.visibility == 'visible'){
-        
+
         moreoptions.style.visibility = 'hidden'
         moreoptions.style.transform = 'translate(-300px, 0px)'
         main.style.transform = 'translate(0px, 0px)'
@@ -268,11 +316,9 @@ search.addEventListener('click', () => {
     window.location = 'login.html'
 })
 
-const favPage = document.querySelector('.fav-page')
 
 favorite.addEventListener('click', () => {
 
-    console.log('foi')
 
     if(favPage.style.visibility == 'hidden'){
 
