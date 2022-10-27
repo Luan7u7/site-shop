@@ -227,6 +227,7 @@ main{
     font-size: 1em;
     line-height: 14px;
     font-variant: small-caps;
+    letter-spacing: .6px;
 }
 
 footer{
