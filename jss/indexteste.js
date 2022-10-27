@@ -256,11 +256,13 @@ const createContainerAnuncio = () => {
     const div = createElement('div', 'imagem')
     const text = createElement('span', 'texto')
 
-    text.innerHTML = 'Você com conforto e estilo'
+    text.innerHTML = 'O conforto de milhões <br> <sup>novo air-drop p<small>99</small></sup><br> R$978,97'
     text.style.top = '30%'
     text.style.left = '15%'
+    text.style.fontSize = '1.2em'
     div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/0119897U.jpg')`
-    div.style.flex = '0 0 100%'
+    div.style.height = '165px'
+    div.style.flex = '0 0 89%'
     div.style.scale = '1.3'
     div.style.backgroundSize = 'contain'
     div.style.backgroundPosition = 'bottom right'
@@ -269,8 +271,8 @@ const createContainerAnuncio = () => {
 
     main.appendChild(container);
     container.appendChild(section);
-    section.appendChild(div);
     div.appendChild(text)
+    section.appendChild(div);
 
     return container;
 }

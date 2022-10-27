@@ -2,14 +2,7 @@
 
 :root{
     --font: 'Poiret One', cursive;
-    --span: position: absolute,
-    top: 5px,
-    left: 10px,
-    font-family: var(--font),
-    font-weight: bold,
-    font-size: .9em,
-    text-transform: uppercase,
-    text-shadow: -1px 1px 0px rgba(233, 7, 7, 0.601), 1px 1px 0px rgba(0, 0, 255, 0.349);
+    
 }
 
 *{
@@ -69,7 +62,7 @@ header{
     padding: 8px;
     background-color: white;
     height: 50px;
-    z-index: 10;
+    z-index: 1;
 }
 
 header h2{
@@ -107,7 +100,7 @@ header button{
     width: 78%;
     max-width: 85%;
     height: 150px;
-    z-index: 3;
+    z-index: 2;
     flex: 0 0 50%;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -158,6 +151,8 @@ header > div {
 }
 
 nav{
+    position: sticky;
+    top: 50px;
     display: flex;
     align-items: center;
     overflow-x: scroll;
@@ -166,6 +161,7 @@ nav{
     font-size: .7em;
     background-color: white;
     border-bottom: 1px solid rgb(197, 196, 196);
+    z-index: 1;
 }
 nav::-webkit-scrollbar-thumb{
     color:none; 
@@ -213,22 +209,24 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     height: 150px;
-    width: 100%;     
+    width: 100%;
     flex: 0 0 40%;
     scroll-snap-align: start;
+    border: 1px solid white;
     border-radius: 8px;
+    box-shadow: -1px 1px 4px rgba(168, 168, 168, 0.259);
 }
 
 
 .section span{
     position: absolute;
-    top: 5px;
+    top: 15px;
     left: 10px;
     font-family: var(--font);
     font-weight: bold;
-    font-size: .9em;
-    text-transform: uppercase;
-    text-shadow: -1px 1px 0px rgba(226, 180, 228, 0.601), 1px 1px 0px rgba(176, 197, 233, 0.349);
+    font-size: 1em;
+    line-height: 14px;
+    font-variant: small-caps;
 }
 
 footer{
@@ -276,7 +274,7 @@ footer > button > img{
     right: 0;
     /* background-color: rgba(128, 0, 128, 0.289); */
     width: 100%;
-    height: 88%;
+    height: 85%;
     transition: all .5s cubic-bezier(1,-0.04,.54,1.16);
     visibility: hidden;
 }
