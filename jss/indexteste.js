@@ -8,7 +8,8 @@ const closemenu = document.querySelector('.closemenu')
 const main = document.querySelector('main')
 const search = document.querySelector('.search')
 const buy = document.querySelector('.buy')
-const favPage =document.querySelector('.fav-page')
+const favPage = document.querySelector('.fav-page')
+const lupa = document.getElementById('lupa')
 const modelos = ['','','', '',]
 
 
@@ -252,27 +253,22 @@ const createContainerXXXVILow = () => {
 const createContainerAnuncio = () => {
 
     const container = createElement('div', 'container')
-    const section = createElement('div', 'section')
+    const content = createElement('section', 'anuncio')
     const div = createElement('div', 'imagem')
     const text = createElement('span', 'texto')
 
-    text.innerHTML = 'O conforto de milhões <br> <sup>novo air-drop p<small>99</small></sup><br> R$978,97'
-    text.style.top = '30%'
-    text.style.left = '15%'
-    text.style.fontSize = '1.2em'
+    text.innerHTML = 'O conforto de milhões <br> <sup>novo air-drop p<small>99</small></sup><br><br><br> R$978,97'
     div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/0119897U.jpg')`
-    div.style.height = '165px'
-    div.style.flex = '0 0 89%'
-    div.style.scale = '1.3'
+    // div.style.scale = '1.3'
     div.style.backgroundSize = 'contain'
     div.style.backgroundPosition = 'bottom right'
 
 
 
     main.appendChild(container);
-    container.appendChild(section);
+    container.appendChild(content);
+    content.appendChild(div);
     div.appendChild(text)
-    section.appendChild(div);
 
     return container;
 }
@@ -287,7 +283,7 @@ createContainerXXXVILow();
 
 menu.addEventListener('click', () => {
 
-    if(moreoptions.style.visibility == 'hidden'){
+    if(moreoptions.style.transform = 'translate(-340px, 0px)'){
         moreoptions.style.transform = 'translate(0px, 0px)'
         moreoptions.style.transition = 'all .4s'
         main.style.transform = 'translate(0px, 85px)'
@@ -315,25 +311,26 @@ closemenu.addEventListener('click', () => {
 
 search.addEventListener('click', () => {
 
-    window.location = 'login.html'
+    search.classList.toggle('on');
+
+    lupa.style.width = '100px'
 })
 
 
 favorite.addEventListener('click', () => {
 
 
-    if(favPage.style.visibility == 'hidden'){
+    if(favPage.style.transform == 'translate(0px, 0px)'){
 
+        favPage.style.transform = 'translate(0px, 800px)'
+        favPage.style.visibility = 'visible'
+    }
+    else {
+        
         favPage.style.visibility = 'visible'
         favPage.style.transform = 'translate(0px, 0px)'
     }
-    else {
-
-        favPage.style.transform = 'translate(0px, 800px)'
-        favPage.style.visibility = 'hidden'
-    }
 })
-    
 
     
 person.addEventListener('click', () => {

@@ -87,7 +87,7 @@ header button{
 }
 
 .moreoptions{
-    position: fixed;
+    position: absolute;
     margin: 0;
     top: 5px;
     left: 0;
@@ -107,7 +107,7 @@ header button{
     padding: 64px 10px;
     visibility: hidden;
     opacity: 1;
-    transform: translate(-300px, 0px);
+    transform: translate(-340px, 0px);
     cursor: pointer;
 }
 
@@ -151,10 +151,11 @@ header > div {
 }
 
 nav{
-    position: sticky;
+    position: fixed;
     top: 50px;
     display: flex;
     align-items: center;
+    width: 100%;
     overflow-x: scroll;
     padding: 0px 10px;
     gap: 30px;
@@ -167,7 +168,7 @@ nav::-webkit-scrollbar-thumb{
     color:none; 
     background-color: none;
     visibility: hidden;
-}
+}   
 
 
 main{
@@ -182,11 +183,48 @@ main{
 .container{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    /* background-color: #1589f5fd; */
+    /* background-color: #F6F6F6; */
     width: 100%;
     margin-top: 10px;
 }
+
+.anuncio{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6F6F6;
+    width: 98%;
+    height: 134px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: -1px 1px 4px rgb(168 168 168 / 26%);
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.anuncio .imagem{
+    background-repeat: no-repeat;
+    height: 197px;
+    flex: 0 0 103%;
+    background-size: contain;
+    background-position: right bottom;
+}
+
+.anuncio span{
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    font-size: 1.3em;
+    font-family: var(--font);
+    font-weight: bold;
+    line-height: 14px;
+    font-variant: small-caps;
+    letter-spacing: .6px;
+}
+
 
 .section{
     position: relative;
@@ -244,11 +282,26 @@ footer{
     border-top: 1px solid rgb(196, 196, 196);
     background: linear-gradient(rgba(255, 255, 255, 0.879), rgb(255, 252, 252));
     backdrop-filter: blur(3px);
-    z-index: 99;
+    z-index: 2;
+}
+
+.search{
+    z-index: 4;
+}
+
+#lupa{
+    right: 36px;
+    width: 20px;
+    height: 24px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: transparent;
 }
 
 .search.on{
     background-color: purple;
+    width: 20px;
 }
 
 footer > button{
