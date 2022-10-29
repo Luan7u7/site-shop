@@ -80,7 +80,7 @@ const createContainerLaranja = () => {
     const container = createElement('div', 'container')
     const section = createElement('div', 'section');
     const div = createElement('div', 'f1');
-    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755A4.jpg')`
+    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/0229177T.jpg')`
     
     const div2 = createElement('div', 'f1');
     div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755A2.jpg')`
@@ -276,6 +276,7 @@ const createContainerAnuncio = () => {
 createContainerAnuncio();
 createContainerBranco();
 createContainerLaranja();
+createContainerAnuncio();
 createContainerMidSE();
 createContainerXUX();
 createContainerZion2();
@@ -287,7 +288,6 @@ menu.addEventListener('click', () => {
         moreoptions.style.transform = 'translate(0px, 0px)'
         moreoptions.style.transition = 'all .4s'
         main.style.transform = 'translate(0px, 85px)'
-        main.style.transition = 'all .5s'
         moreoptions.style.visibility = 'visible'
     }
     else {
@@ -298,22 +298,21 @@ menu.addEventListener('click', () => {
 
 closemenu.addEventListener('click', () => {
 
-    if(moreoptions.style.visibility == 'visible'){
+    if(moreoptions.style.transform = 'translate(-340px, 0px)'){
 
         moreoptions.style.visibility = 'hidden'
         moreoptions.style.transform = 'translate(-300px, 0px)'
         main.style.transform = 'translate(0px, 0px)'
     }
-    else {
-        telamenu.style.visibility = 'hidden'
-    }
+    
+    //tirar o o clipping azul na hora de fechar o menu
 })
 
 search.addEventListener('click', () => {
 
     search.classList.toggle('on');
 
-    lupa.style.width = '100px'
+   
 })
 
 

@@ -9,5 +9,6 @@
     "diffEditor.wordWrap": "on",
     "editor.wordWrap": "on",
     "workbench.editor.wrapTabs": true,
-    "prettier.proseWrap": "preserve"
+    "prettier.proseWrap": "preserve",
+    "liveServer.settings.port": 5501
 }
