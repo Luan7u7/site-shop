@@ -119,8 +119,6 @@ header button{
     transform: translate(-340px, 0px);
     cursor: pointer;
     transition: all .5s;
-    text-decoration: none;
-    user-select: none;
 }
 
 .moreoptions a{
@@ -137,9 +135,6 @@ header button{
     height: 25px;
     font-size: .8em;
     z-index: 1;
-    text-decoration: none;
-    user-select: none;
-
 }
 
 .closemenu{
@@ -187,8 +182,8 @@ main{
     flex-direction: column;
     background-color: rgb(243, 243, 243);
     width: 100%;
-    height: 100%;
-    padding: 0px 1px 12% 1px;
+    height: 100%; 
+    padding: 0px 1px 0% 1px;
     z-index: 2;
     transition: all .5s;
 }
@@ -224,6 +219,7 @@ main{
     flex: 0 0 103%;
     background-size: contain;
     background-position: right bottom;
+    transform-origin: center;
 }
 
 .anuncio span{
@@ -289,6 +285,7 @@ footer{
     left: 0;
     height: 50px;
     display: flex;
+    flex-wrap: nowrap;
     gap: 10%;
     justify-content: space-evenly;
     align-items: center;
@@ -296,33 +293,41 @@ footer{
     background: linear-gradient(rgba(255, 255, 255, 0.879), rgb(255, 252, 252));
     backdrop-filter: blur(3px);
     z-index: 2;
+    cursor: pointer;
 }
 
-#lupa{
-    right: 36px;
-    width: 20px;
-    height: 24px;
-    display: block;
-    border: 1px solid black;
-    border-radius: 4px;
-    background-color: transparent;
-}
-
-.search.on{
-    background-color: purple;
-    width: 20px;
-}
-
-footer > button{
+.content-search{
     display: flex;
     align-items: center;
-    background: none;
-    border: none;
-    margin-bottom: 3px;
+    justify-content: space-around;
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: all .5s; 
 }
 
-footer > button > img{
-    filter: invert(30%);
+.input-search{
+    display: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.066);
+    border-radius: 20px;
+    height: 25px;
+    width: 80%;
+    outline: none;
+    text-indent: 10px;
+    font-size: 1.2em;
+}
+
+.search-icon{
+    background-color: transparent;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 
@@ -348,6 +353,7 @@ footer > button > img{
     background-color: white;
     width: 100%;
     height: 100%;
+    border-top: 1px solid rgb(207, 207, 207);
 }
 
 .fav-page-content h4{

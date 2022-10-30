@@ -6,12 +6,12 @@ const person = document.querySelector('.person')
 const moreoptions = document.querySelector('.moreoptions')
 const closemenu = document.querySelector('.closemenu')
 const main = document.querySelector('main')
-const search = document.querySelector('.search')
+const contentSearch = document.querySelector('.content-search');
+const inputSearch = document.querySelector('.input-search')
+const searchIcon = document.querySelector('.search-icon')
 const buy = document.querySelector('.buy')
 const favPage = document.querySelector('.fav-page')
-const lupa = document.getElementById('lupa')
-const modelos = ['','','', '',]
-
+const lupa = document.getElementById('lupa');
 
 const createElement = (tag, className) =>{
     const element = document.createElement(tag);
@@ -19,7 +19,7 @@ const createElement = (tag, className) =>{
     return element;
 }
 
-const createContainerBranco = () => {
+const firstSection = () => {
     
     const container = createElement('div', 'container')
     const section = createElement('div', 'section');
@@ -76,27 +76,27 @@ const createContainerBranco = () => {
     return container;
 }
 
-const createContainerLaranja = () => {
+const secondSection = () => {
     const container = createElement('div', 'container')
     const section = createElement('div', 'section');
     const div = createElement('div', 'f1');
     div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/0229177T.jpg')`
     
     const div2 = createElement('div', 'f1');
-    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755A2.jpg')`
+    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/023790NX.jpg')`
 
     const div3 = createElement('div', 'f1');
-    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755.jpg')`
+    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/0229327T.jpg')`
 
     const div4 = createElement('div', 'f1');
-    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755A3.jpg')`
+    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/0238497T.jpg')`
     div4.style.backgroundSize = 'contain'
 
     const div5 = createElement('div', 'f1');
-    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755A6.jpg')`
+    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/023789NX.jpg')`
 
     const div6 = createElement('div', 'f1');
-    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755A7.jpg')`
+    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/021895ID.jpg')`
 
 
     main.appendChild(container)
@@ -111,27 +111,27 @@ const createContainerLaranja = () => {
     return container;
 }
 
-const createContainerMidSE = () => {
+const thirdSection = () => {
     const container = createElement('div', 'container')
     const section = createElement('div', 'section');
     const div = createElement('div', 'f1');
-    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1A4.jpg')`
+    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/012791ID.jpg')`
     
     const div2 = createElement('div', 'f1');
-    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1A2.jpg')`
+    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/022258ID.jpg')`
 
     const div3 = createElement('div', 'f1');
-    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1.jpg')`
+    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/022762ID.jpg')`
 
     const div4 = createElement('div', 'f1');
-    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1A3.jpg')`
+    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/0222530L.jpg')`
     div4.style.backgroundSize = 'contain'
 
     const div5 = createElement('div', 'f1');
-    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1A6.jpg')`
+    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/0230403X.jpg')`
 
     const div6 = createElement('div', 'f1');
-    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1A7.jpg')`
+    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/023618ID.jpg')`
 
     main.appendChild(container)
     container.appendChild(section);
@@ -145,28 +145,28 @@ const createContainerMidSE = () => {
     return container;
 }
 
-const createContainerXUX = () => {
+const fourthSection = () => {
     const container = createElement('div', 'container')
     const section = createElement('div', 'section');
 
     const div = createElement('div', 'f1');
-    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147UA4.jpg')`
+    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/006579IE.jpg')`
     
     const div2 = createElement('div', 'f1');
-    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147UA2.jpg')`
+    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/0065797U.jpg')`
 
     const div3 = createElement('div', 'f1');
-    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147U.jpg')`
+    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/00657952.jpg')`
 
     const div4 = createElement('div', 'f1');
-    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147UA3.jpg')`
+    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/006579MY.jpg')`
     div4.style.backgroundSize = 'contain'
 
     const div5 = createElement('div', 'f1');
-    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147UA6.jpg')`
+    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/006579IF.jpg')`
 
     const div6 = createElement('div', 'f1');
-    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147UA7.jpg')`
+    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/00657951.jpg')`
 
     main.appendChild(container)
     container.appendChild(section);
@@ -180,28 +180,28 @@ const createContainerXUX = () => {
     return container;
 }
 
-const createContainerZion2 = () => {
+const fifthSection = () => {
     const container = createElement('div', 'container')
     const section = createElement('div', 'section');
 
     const div = createElement('div', 'f1');
-    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051A4.jpg')`
+    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/010784ID.jpg')`
     
     const div2 = createElement('div', 'f1');
-    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051A2.jpg')`
+    div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/0112167T.jpg')`
 
     const div3 = createElement('div', 'f1');
-    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051.jpg')`
+    div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/008666ID.jpg')`
 
     const div4 = createElement('div', 'f1');
-    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051A3.jpg')`
-    div4.style.backgroundSize = 'contain'
+    div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/013431NX.jpg')`
+    div4.style.backgroundSize = 'cover'
 
     const div5 = createElement('div', 'f1');
-    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051A6.jpg')`
+    div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/023872ID.jpg')`
 
     const div6 = createElement('div', 'f1');
-    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051A7.jpg')`
+    div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/0117937T.jpg')`
 
     main.appendChild(container)
     container.appendChild(section);
@@ -238,6 +238,8 @@ const createContainerXXXVILow = () => {
     const div6 = createElement('div', 'f1');
     div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/013631IDA7.jpg')`
 
+    section.style.margin
+
     main.appendChild(container)
     container.appendChild(section);
     section.appendChild(div);
@@ -273,13 +275,38 @@ const createContainerAnuncio = () => {
     return container;
 }
 
+const createContainerAnuncio2 = () => {
+
+    const container = createElement('div', 'container')
+    const content = createElement('section', 'anuncio')
+    const div = createElement('div', 'imagem')
+    const text = createElement('span', 'texto')
+
+    text.innerHTML = 'Os melhores Caps você<br>encontra aqui<br>confira'
+    text.style.transform = 'rotateY(180deg)'
+    text.style.lineHeight = '1.4em'
+    text.style.textAlign = 'right'
+    div.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02399551.jpg')`
+    div.style.backgroundSize = 'contain'
+    div.style.backgroundPosition = 'bottom right'
+    div.style.transform = 'rotateY(180deg)'
+
+
+    main.appendChild(container);
+    container.appendChild(content);
+    content.appendChild(div);
+    div.appendChild(text)
+
+    return container;
+}
+
 createContainerAnuncio();
-createContainerBranco();
-createContainerLaranja();
-createContainerAnuncio();
-createContainerMidSE();
-createContainerXUX();
-createContainerZion2();
+firstSection();
+secondSection();
+createContainerAnuncio2();
+thirdSection();
+fourthSection();
+fifthSection();
 createContainerXXXVILow();
 
 menu.addEventListener('click', () => {
@@ -308,10 +335,14 @@ closemenu.addEventListener('click', () => {
     //tirar o o clipping azul na hora de fechar o menu
 })
 
-search.addEventListener('click', () => {
+searchIcon.addEventListener('click', (event) => {
 
-    search.classList.toggle('on');
+    console.log(event );
 
+    if (inputSearch.style.display == 'none'){
+
+        inputSearch.style.display = 'flex'
+    }
    
 })
 
