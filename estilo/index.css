@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 :root{
@@ -9,7 +11,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* outline: 1px double orangered; */
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     text-decoration: none;
@@ -51,6 +52,7 @@ body{
     position: relative;
 }
 
+
 header{
     position: sticky;
     margin: 0;
@@ -69,7 +71,6 @@ header{
 header h2{
     font-family: 'Poiret One', cursive;
     font-weight: 800;
-    /* color: crimson; */
     font-size: 1.5em;
     margin-left: 28px;
 }
@@ -174,7 +175,7 @@ nav::-webkit-scrollbar-thumb{
     color:none; 
     background-color: none;
     visibility: hidden;
-}   
+}    */
 
 
 main{
@@ -186,14 +187,15 @@ main{
     padding: 0px 1px 0% 1px;
     z-index: 2;
     transition: all .5s;
-}
+} 
+
+
 
 .container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* background-color: #F6F6F6; */
     width: var(--totalscreen);
     margin-top: 10px;
 }
@@ -340,7 +342,6 @@ footer{
     transform: translate(0px, 800px);
     color: white;
     right: 0;
-    /* background-color: rgba(128, 0, 128, 0.289); */
     width: var(--totalscreen);
     height: 85%;
     transition: all .5s cubic-bezier(1,-0.04,.54,1.16);
@@ -366,4 +367,3 @@ footer{
     font-size: .5em;
     text-align: center;
 }
-

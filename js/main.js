@@ -351,4 +351,3 @@ buy.addEventListener('click', () => {
 })
 
 
-//fazer também a animação do icone de busca com o click.
