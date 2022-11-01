@@ -1,17 +1,8 @@
+import { menu, favorite, main, person, moreoptions, closemenu, contentSearch, inputSearch,  searchIcon, buy, favPage } from "../js/module/refs.js"
 
 
-const menu = document.querySelector('.menu')
-const favorite = document.querySelector('.favorite')
-const person = document.querySelector('.person')
-const moreoptions = document.querySelector('.moreoptions')
-const closemenu = document.querySelector('.closemenu')
-const main = document.querySelector('main')
-const contentSearch = document.querySelector('.content-search');
-const inputSearch = document.querySelector('.input-search')
-const searchIcon = document.querySelector('.search-icon')
-const buy = document.querySelector('.buy')
-const favPage = document.querySelector('.fav-page')
-const lupa = document.getElementById('lupa');
+import { menuclick } from "./module/menuclick.js";
+
 
 const createElement = (tag, className) =>{
     const element = document.createElement(tag);
@@ -23,26 +14,24 @@ const firstSection = () => {
     
     const container = createElement('div', 'container')
     const section = createElement('div', 'section');
+    const legend = createElement('legend', 'legend')
     
     const div1 = createElement('div', 'white');
     const white = createElement('span', 'white')
     div1.style.backgroundImage = `url(https://imgnike-a.akamaihd.net/1300x1300/01675551A4.jpg)`
-    white.innerHTML = 'Air Jordan <br>White'
+    legend.innerHTML = 'R$297,67'
     
     const div2 = createElement('div', 'f1');
     const midse = createElement('span', 'midse')
-    midse.innerHTML = 'Mid-SE'
     div2.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/014626P1A4.jpg')`
     
     const div3 = createElement('div', 'f1');
     const xux = createElement('span', 'xux')
-    xux.innerHTML = 'XUX'
     div3.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/0114147UA4.jpg')`
 
 
     const div4 = createElement('div', 'f1');
     const zion2 = createElement('span', 'zion2')
-    zion2.innerHTML = 'Zion2'
     div4.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/02235051A4.jpg')`
     div4.style.backgroundSize = 'contain'
    
@@ -50,11 +39,9 @@ const firstSection = () => {
     const div5 = createElement('div', 'f1');
     const orange = createElement('span', 'orange')
     div5.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/1300x1300/01648755A4.jpg')`
-    orange.innerHTML = 'Orange'
     
     const div6 = createElement('div', 'f1');
     const xxxvilow = createElement('span', 'xxxvilow')    
-    xxxvilow.innerHTML = 'XXXvilow'
     div6.style.backgroundImage = `url('https://imgnike-a.akamaihd.net/900x900/013631IDA4.jpg')`
     
 
@@ -309,19 +296,8 @@ fourthSection();
 fifthSection();
 createContainerXXXVILow();
 
-menu.addEventListener('click', () => {
+menu.addEventListener('click', menuclick)
 
-    if(moreoptions.style.transform = 'translate(-340px, 0px)'){
-        moreoptions.style.transform = 'translate(0px, 0px)'
-        moreoptions.style.transition = 'all .4s'
-        main.style.transform = 'translate(0px, 85px)'
-        moreoptions.style.visibility = 'visible'
-    }
-    else {
-        moreoptions.style.transform = 'translate(-340px, 0px)'
-        moreoptions.style.visibility = 'hidden'
-    }
-})
 
 closemenu.addEventListener('click', () => {
 
@@ -335,9 +311,10 @@ closemenu.addEventListener('click', () => {
     //tirar o o clipping azul na hora de fechar o menu
 })
 
+
 searchIcon.addEventListener('click', (event) => {
 
-    console.log(event );
+    console.log('foi');
 
     if (inputSearch.style.display == 'none'){
 
@@ -374,10 +351,4 @@ buy.addEventListener('click', () => {
 })
 
 
-
-
-
-
 //fazer também a animação do icone de busca com o click.
-
-//criar paginas de perfil, mensagens, carrinho, favoritos e atribuir a pagina principal para o icone home.
