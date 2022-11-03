@@ -1,5 +1,5 @@
 
-
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 :root{
@@ -175,7 +175,7 @@ nav::-webkit-scrollbar-thumb{
     color:none; 
     background-color: none;
     visibility: hidden;
-}    */
+}    
 
 
 main{
@@ -366,4 +366,15 @@ footer{
 .fav-page-content span{
     font-size: .5em;
     text-align: center;
-}
+} */
+
+
+@import "/estilo/assets/ad.css";
+@import "/estilo/assets/config.css";
+@import "/estilo/assets/favpage.css";
+@import "/estilo/assets/footer.css";
+@import "/estilo/assets/body-main.css";
+@import "/estilo/assets/header.css";
+@import "/estilo/assets/menu.css";
+@import "/estilo/assets/nav.css";
+@import "/estilo/assets/section.css";
