@@ -1,0 +1,20 @@
+/* @import "/estilo/components/ad.css";
+@import "/estilo/components/config.css";
+@import "/estilo/components/favpage.css";
+@import "/estilo/components/footer.css";
+@import "/estilo/components/body-main.css";
+@import "/estilo/components/header.css";
+@import "/estilo/components/menu.css";
+@import "/estilo/components/nav.css";
+@import "/estilo/components/section.css"; */
+
+
+@import url("/estilo/components/ad.css");
+@import url("/estilo/components/config.css");
+@import url("/estilo/components/favpage.css");
+@import url("/estilo/components/footer.css");
+@import url("/estilo/components/body-main.css");
+@import url("/estilo/components/header.css");
+@import url("/estilo/components/menu.css");
+@import url("/estilo/components/nav.css");
+@import url("/estilo/components/section.css");
