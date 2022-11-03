@@ -59,3 +59,8 @@
     cursor: pointer;
     font-size: .9em;
 }
+
+.closemenu span{
+    font-size: 1.3em;
+    margin-top: 2px;
+}
