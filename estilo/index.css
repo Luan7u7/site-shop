@@ -369,12 +369,12 @@ footer{
 } */
 
 
-@import "/estilo/assets/ad.css";
-@import "/estilo/assets/config.css";
-@import "/estilo/assets/favpage.css";
-@import "/estilo/assets/footer.css";
-@import "/estilo/assets/body-main.css";
-@import "/estilo/assets/header.css";
-@import "/estilo/assets/menu.css";
-@import "/estilo/assets/nav.css";
-@import "/estilo/assets/section.css";
+@import url(/estilo/assets/ad.css);
+@import url(/estilo/assets/config.css);
+@import url(/estilo/assets/favpage.css);
+@import url(/estilo/assets/footer.css);
+@import url(/estilo/assets/body-main.css);
+@import url(/estilo/assets/header.css);
+@import url(/estilo/assets/menu.css);
+@import url(/estilo/assets/nav.css);
+@import url(/estilo/assets/section.css);
