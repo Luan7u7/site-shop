@@ -125,9 +125,9 @@
 
   .textbg{
     position: absolute;
-    top: 13%;
-    left: 15%;
-    width: 70%;
+    top: 10%;
+    left: 6%;
+    width: 85%;
     height: 100%;
     background-color: fff;
   }
@@ -186,9 +186,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
+    width: 350px;
     max-width: 500px;
-    height: 500px;
+    height: 600px;
     display: flex;
     align-self: center;
     flex-direction: column;
@@ -291,6 +291,7 @@
     font-weight: bold;
     color: rgb(73, 73, 73);
     border: 1px solid rgb(222, 255, 244);
+    border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease-in;
     text-transform: uppercase;
@@ -374,8 +375,6 @@
 
   
 }
-
-
 
 
 @media (min-width:501px){

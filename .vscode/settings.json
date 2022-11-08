@@ -10,5 +10,9 @@
     "editor.wordWrap": "on",
     "workbench.editor.wrapTabs": true,
     "prettier.proseWrap": "preserve",
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "html.format.wrapLineLength": 120,
+    "editor.wrappingIndent": "indent",
+    "editor.wrappingStrategy": "simple",
+    "workbench.colorTheme": "GitHub Dark"
 }
