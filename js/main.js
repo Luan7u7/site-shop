@@ -9,18 +9,40 @@ const createElement = (tag, className) =>{
     return element;
 }
 const container = createElement('div', 'container');
-const section = createElement('div', 'section');
 const section1 = createElement('section', 'anuncio');
-const text = createElement('span','')
 
 const clothesLinks = [
     
-    "url('https://img.ltwebstatic.com/images3_pi/2022/09/23/1663897087abeced1089303adc8c2e94fe684a4632_thumbnail_405x552.webp')",
-    "url('https://img.ltwebstatic.com/images3_pi/2022/08/31/1661875250461190540124b4f44c2da8112f5d8073_thumbnail_405x552.webp')",
-    "url('https://img.ltwebstatic.com/images3_pi/2020/12/09/1607481832386c7359a92c5fa7d801ccab8f31144e_thumbnail_405x552.webp')",
-    "url('https://img.ltwebstatic.com/images3_pi/2021/06/17/162389276905c8ad5db571ea8a2be428e248f345a9_thumbnail_405x552.webp')",
-    "url('https://img.ltwebstatic.com/images3_pi/2022/03/23/1648037329ef61759933a2e45c802c504040f0dd51_thumbnail_405x552.webp')",
-    "url('https://img.ltwebstatic.com/images3_pi/2021/12/27/16405850862c25c272a56425e1d7cb0beef6f6c925_thumbnail_405x552.webp')",
+    { 
+        img: "url('https://img.ltwebstatic.com/images3_pi/2022/09/23/1663897087abeced1089303adc8c2e94fe684a4632_thumbnail_405x552.webp')", 
+        text: 'R$69,90'
+    },
+
+    {
+        img: "url('https://img.ltwebstatic.com/images3_pi/2022/08/31/1661875250461190540124b4f44c2da8112f5d8073_thumbnail_405x552.webp')",
+        text: 'R$89,90'
+    },
+
+    {
+        img: "url('https://img.ltwebstatic.com/images3_pi/2020/12/09/1607481832386c7359a92c5fa7d801ccab8f31144e_thumbnail_405x552.webp')",
+        text: 'R$134,80'
+    },
+
+    {
+        img: "url('https://img.ltwebstatic.com/images3_pi/2021/06/17/162389276905c8ad5db571ea8a2be428e248f345a9_thumbnail_405x552.webp')",
+        text: 'R$128,90'
+    },
+
+    {
+        img: "url('https://img.ltwebstatic.com/images3_pi/2022/03/23/1648037329ef61759933a2e45c802c504040f0dd51_thumbnail_405x552.webp')",
+        text: 'R$79,90'
+    },
+
+    {
+        img: "url('https://img.ltwebstatic.com/images3_pi/2021/12/27/16405850862c25c272a56425e1d7cb0beef6f6c925_thumbnail_405x552.webp')",
+        text: 'R$59,90'
+    },
+
 ]
 
 const sectionClothes = () => { 
@@ -30,12 +52,14 @@ const sectionClothes = () => {
 
     const addImagesInDiv = () => {
 
-        section.innerHTML = clothesLinks.map((clotheLink) =>
+        section.innerHTML = clothesLinks.map(({img, text}) =>
 
-        `
-            <div style="background-image: ${clotheLink};"></div>
-
-        `).join('');
+          `
+            <div style="background-image: ${img};">
+                <span>${text}</span>
+            </div>
+          `
+        ).join('');
     }
     addImagesInDiv();
 }
@@ -62,18 +86,12 @@ sectionClothes();
 createAnuncio();
 
 
-
-
-
 menu.addEventListener('click', menuclickFunc)
-
 closemenu.addEventListener('click', closemenuFunc)
+favorite.addEventListener('click', favoriteFunc)
 
 //tirar o o clipping azul na hora de fechar o menu
 searchIcon.addEventListener('click', (event) => {})
 
-favorite.addEventListener('click', favoriteFunc)
-
 person.addEventListener('click', () => window.location = './perfil.html')
-
 buy.addEventListener('click', () => window.location = './buy.html')
