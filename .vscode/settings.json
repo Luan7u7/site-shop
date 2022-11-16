@@ -14,5 +14,7 @@
     "html.format.wrapLineLength": 120,
     "editor.wrappingIndent": "indent",
     "editor.wrappingStrategy": "simple",
-    "workbench.colorTheme": "GitHub Dark"
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.tree.renderIndentGuides": "onHover",
+    "workbench.view.alwaysShowHeaderActions": false
 }

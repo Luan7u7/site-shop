@@ -31,6 +31,7 @@ export function favoriteFunc(){
     }
 }
 
+
 export function closemenuFunc(){
 
     if(moreoptions.style.transform = 'translate(-340px, 0px)'){
