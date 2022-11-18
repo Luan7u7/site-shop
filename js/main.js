@@ -50,8 +50,8 @@ const sectionClothes = () => {
 
     const section = createElement('div', 'section')
     const documentFragment = createElement('DocumentFragment').appendChild(section)
-    main.appendChild(documentFragment)
-
+   
+    
     const addImagesInDiv = () => {
 
         section.innerHTML = clothesLinks.map(({img, text}) =>
@@ -63,6 +63,7 @@ const sectionClothes = () => {
           `
         ).join('');
     }
+    main.appendChild(documentFragment);
     addImagesInDiv();
 }
 
