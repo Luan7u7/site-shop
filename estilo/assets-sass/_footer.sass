@@ -1,3 +1,5 @@
+@import _mixins
+@import _config
 
 footer
     position: fixed
@@ -13,30 +15,44 @@ footer
     align-items: center
     border-top: 1px solid rgb(196, 196, 196)
     background: linear-gradient(rgba(255, 255, 255, 0.879), rgb(255, 252, 252))
+    
     backdrop-filter: blur(3px)
     z-index: 2
     cursor: pointer
 
     .content-search
-        display: flex
+        position: absolute
+        bottom: 0.5em
+        right: 1.9em
+        display: block
         align-items: center
         justify-content: space-around
-        width: 34px
+        width: 0px
         height: 34px
-        background-color: transparent
+        background-color: #fff
         border-radius: 20px
-        transition: all .5s
+        visibility: hidden
+        transition: all 0.3s
+        transition-delay: .3s
+        border: 1px solid #00000021
 
     .input-search
-        display: none
+        position: absolute
+        bottom: 0.68em
+        right: 5em
+        display: block
         border: none
-        background-color: rgba(255, 255, 255, 0.066)
-        border-radius: 20px
-        height: 25px
-        width: 80%
+        background-color: #ffffff04
+        color: #000
+        height: 24px
+        width: 72%
         outline: none
         text-indent: 10px
         font-size: 1.2em
+        visibility: hidden
+        @include font
+        font-weight: bold
+
 
     .search-icon
         background-color: transparent
@@ -47,3 +63,5 @@ footer
         align-items: center
         justify-content: center
         cursor: pointer
+        visibility: visible
+        z-index: 4

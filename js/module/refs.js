@@ -11,6 +11,11 @@ export const inputSearch = document.querySelector('.input-search')
 export const searchIcon = document.querySelector('.search-icon')
 export const buy = document.querySelector('.buy')
 export const favPage = document.querySelector('.fav-page')
+export const header = document.querySelector('header')
+export const nav = document.querySelector('nav')
+export const footer = document.querySelector('footer')
+export const body = document.querySelector('body')
+
 
 //exports perfil refs
 export const home = document.getElementById('home')

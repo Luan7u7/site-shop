@@ -1,7 +1,7 @@
 
-import { menu, favorite, main, person, moreoptions, closemenu, contentSearch, inputSearch,  searchIcon, buy, favPage, home } from "./module/refs.js"
+import { menu, favorite, main, person, moreoptions, closemenu, contentSearch, inputSearch,  searchIcon, buy, favPage, home, header, nav, footer, body } from "./module/refs.js"
 
-import { menuclickFunc, favoriteFunc, closemenuFunc } from "./module/functions.js";
+import { menuclickFunc, favoriteFunc, closemenuFunc, searchFunc } from "./module/functions.js";
 
 const createElement = (tag, className) =>{
     const element = document.createElement(tag);
@@ -10,6 +10,7 @@ const createElement = (tag, className) =>{
 }
 const container = createElement('div', 'container');
 const section1 = createElement('section', 'anuncio');
+
 
 const clothesLinks = [
     
@@ -64,7 +65,7 @@ const sectionClothes = () => {
     addImagesInDiv();
 }
 
-const createAnuncio = () => {
+const createAnuncio = () => { 
     
     const div = createElement('div', 'imagem')
     const text = createElement('span', 'texto')
@@ -85,13 +86,23 @@ const createAnuncio = () => {
 sectionClothes();
 createAnuncio();
 
-
 menu.addEventListener('click', menuclickFunc)
 closemenu.addEventListener('click', closemenuFunc)
 favorite.addEventListener('click', favoriteFunc)
-
-//tirar o o clipping azul na hora de fechar o menu
-searchIcon.addEventListener('click', (event) => {})
-
+searchIcon.addEventListener('click', searchFunc)
 person.addEventListener('click', () => window.location = './perfil.html')
 buy.addEventListener('click', () => window.location = './buy.html')
+
+
+//[X]animação de busca
+//[ ]função de busca/pesquisa
+//[ ]fazer add remove pra sacola
+//[ ]criar pag para cada produto 
+//[ ]criar main anuncios
+//[ ]salvar itens favoritados na favpage
+//[ ]colocar pin no favorite quando favoritar algum item
+//[ ]fazer imagens clicaveis para ver mais descrições da mesma
+//[ ]colocar item adicionados na sacola
+//[ ]colocar pin no icone de sacola quando adicionar itens
+
+ 

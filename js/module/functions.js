@@ -1,4 +1,4 @@
-import { menu, favorite, main, person, moreoptions, closemenu, contentSearch, inputSearch,  searchIcon, buy, favPage } from "./refs.js"
+import { menu, favorite, main, person, moreoptions, closemenu, contentSearch, inputSearch,  searchIcon, buy, favPage, footer } from "./refs.js"
 
 
 export function menuclickFunc(){
@@ -15,7 +15,6 @@ export function menuclickFunc(){
     }
 }
 
-
 export function favoriteFunc(){
  
     
@@ -31,7 +30,6 @@ export function favoriteFunc(){
     }
 }
 
-
 export function closemenuFunc(){
 
     if(moreoptions.style.transform = 'translate(-340px, 0px)'){
@@ -39,5 +37,28 @@ export function closemenuFunc(){
         moreoptions.style.visibility = 'hidden'
         moreoptions.style.transform = 'translate(-300px, 0px)'
         main.style.transform = 'translate(0px, 0px)'
+    }
+}
+
+export function searchFunc(){
+    
+    if (contentSearch.style.visibility == 'visible'){
+        
+        inputSearch.style.visibility = 'hidden'
+        inputSearch.style.border = 'none'
+        contentSearch.style.width = '0px'
+        contentSearch.style.border = '1px solid #00000000'
+        contentSearch.style.visibility = 'hidden'
+        contentSearch.style.right = '5em'
+    }
+    else{
+        
+        inputSearch.style.visibility = 'visible'
+        inputSearch.style.border = '1px solid #ffffff04'
+        contentSearch.style.width = '85%'
+        contentSearch.style.border = '1px solid #00000031'
+        contentSearch.style.backgroundColor = '#fff'
+        contentSearch.style.visibility = 'visible'
+        contentSearch.style.right = '1.9em'
     }
 }

@@ -7,7 +7,7 @@
     "editor.minimap.maxColumn": 80,
     "editor.minimap.autohide": true,
     "diffEditor.wordWrap": "on",
-    "editor.wordWrap": "on",
+    "editor.wordWrap": "bounded",
     "workbench.editor.wrapTabs": true,
     "prettier.proseWrap": "preserve",
     "liveServer.settings.port": 5502,
