@@ -56,7 +56,7 @@ export function searchFunc(){
         inputSearch.style.visibility = 'visible'
         inputSearch.style.border = '1px solid #ffffff04'
         contentSearch.style.width = '85%'
-        contentSearch.style.border = '1px solid #00000031'
+        contentSearch.style.border = '1px solid #00000081'
         contentSearch.style.backgroundColor = '#fff'
         contentSearch.style.visibility = 'visible'
         contentSearch.style.right = '1.9em'
