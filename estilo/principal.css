@@ -233,19 +233,19 @@ body main {
       -ms-user-select: none;
           user-select: none;
 }
-* *::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 5px;
   height: 5px;
   visibility: hidden;
   opacity: 0;
   overflow: hidden;
 }
-* *::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background-color: rgba(128, 128, 128, 0.818);
   border-radius: 20px;
   visibility: hidden;
 }
-* *::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   overflow-y: hidden;
   visibility: hidden;
   background-color: rgba(233, 16, 16, 0);
