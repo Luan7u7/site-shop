@@ -49,7 +49,8 @@ const clothesLinks = [
 const sectionClothes = () => { 
 
     const section = createElement('div', 'section')
-    main.appendChild(section)
+    const documentFragment = createElement('DocumentFragment').appendChild(section)
+    main.appendChild(documentFragment)
 
     const addImagesInDiv = () => {
 
@@ -98,7 +99,7 @@ buy.addEventListener('click', () => window.location = './buy.html')
 //[ ]função de busca/pesquisa
 //[ ]fazer add remove pra sacola
 //[ ]criar pag para cada produto 
-//[ ]criar main anuncios
+//[ ]criar mais anuncios
 //[ ]salvar itens favoritados na favpage
 //[ ]colocar pin no favorite quando favoritar algum item
 //[ ]fazer imagens clicaveis para ver mais descrições da mesma
